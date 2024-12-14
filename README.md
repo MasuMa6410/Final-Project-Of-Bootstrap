@@ -33,7 +33,7 @@ Welcome to **ASU Online Courses**, a simple yet effective web development projec
 - Styling and design using CSS.
 - Responsiveness and layout optimization using Bootstrap.
 
-[Check out the live version here!](https://masuma6410.github.io/First-Video-Project/)
+[Check out the live version here!](https://masuma6410.github.io/Final-Project-Of-Bootstrap/)
 
 This project serves as the final step in mastering Bootstrap, focusing on clean code, advanced styling, and responsive design.
 
