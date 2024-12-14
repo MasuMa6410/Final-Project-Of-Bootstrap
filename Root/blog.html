@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASU (Blog)</title>
+    <!-- Css Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Alpin JS -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"
+    ></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../Style/style.css" />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Transitions -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      x-data="{navShow : false}"
+      @scroll.window=" navShow = window.scrollY > 10 ? true : false"
+    >
+      <nav
+        class="header navbar navbar-expand-lg navbar-light fixed-top"
+        :class=" { 'header-scrolled' : navShow }"
+      >
+        <div class="container">
+          <a class="navbar-brand logo" href="#">ASU</a>
+          <button
+            class="navbar-toggler toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >home</a
+                >
+              </li>
+              <li class="nav-item dropdown mx-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  about
+                </a>
+                <ul class="dropdown-menu br-0 bg-white top-orange">
+                  <li>
+                    <a class="dropdown-item" href="./about.html">about Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./team.html">team</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./testimonial.html"
+                      >testimonials</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./portfolio.html">portfolio</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./services.html">services</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./pricing.html">pricing</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./blog.html">blog</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./contact.html">contact</a>
+              </li>
+            </ul>
+            <button class="start-btn p-2">get started</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Back To Home -->
+      <div class="container-fluid back-to-home mt-7">
+        <div
+          class="container p-3 d-flex justify-content-between align-items-center"
+        >
+          <h3 class="text-white">Blog</h3>
+          <ul class="mb-0">
+            <li>
+              <a href="../index.html" class="text-decoration-none text-white"
+                >Home <span class="text-white ms-1">/</span></a
+              >
+            </li>
+            <li class="text-white">Blog</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Blog -->
+    <section id="blog" class="blog">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+
+            <div class="col-lg-8 entries">
+
+                <article class="entry">
+
+                <div class="entry-img">
+                    <img src="../Images/Blog/blog-1.jpg" alt="" class="img-fluid">
+                </div>
+
+                <h2 class="entry-title">
+                    <a href="blog-single.html" class="text-decoration-none">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
+                </h2>
+
+                <div class="entry-meta">
+                    <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a class="text-decoration-none" href="blog-single.html">John Doe</a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a class="text-decoration-none" href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a class="text-decoration-none" href="blog-single.html">12 Comments</a></li>
+                    </ul>
+                </div>
+
+                <div class="entry-content">
+                    <p>
+                    Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                    Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                    </p>
+                    <div class="read-more">
+                    <a class="text-decoration-none" href="blog-single.html">Read More</a>
+                    </div>
+                </div>
+
+                </article>
+
+                <article class="entry">
+
+                <div class="entry-img">
+                    <img src="../Images/blog/blog-2.jpg" alt="" class="img-fluid">
+                </div>
+
+                <h2 class="entry-title">
+                    <a class="text-decoration-none" href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                </h2>
+
+                <div class="entry-meta">
+                    <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a class="text-decoration-none" href="blog-single.html">John Doe</a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a class="text-decoration-none" href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a class="text-decoration-none" href="blog-single.html">12 Comments</a></li>
+                    </ul>
+                </div>
+
+                <div class="entry-content">
+                    <p>
+                    Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo libero rerum voluptatem pariatur nam.
+                    Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae. Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias odio quos distinctio.
+                    </p>
+                    <div class="read-more">
+                    <a class="text-decoration-none" href="blog-single.html">Read More</a>
+                    </div>
+                </div>
+
+                </article>
+
+                <article class="entry">
+
+                <div class="entry-img">
+                    <img src="../Images/blog/blog-3.jpg" alt="" class="img-fluid">
+                </div>
+
+                <h2 class="entry-title">
+                    <a class="text-decoration-none" href="blog-single.html">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</a>
+                </h2>
+
+                <div class="entry-meta">
+                    <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a class="text-decoration-none" href="blog-single.html">John Doe</a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a class="text-decoration-none" href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a class="text-decoration-none" href="blog-single.html">12 Comments</a></li>
+                    </ul>
+                </div>
+
+                <div class="entry-content">
+                    <p>
+                    Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et. Eum temporibus fugiat voluptate enim tenetur sunt omnis.
+                    Doloremque est saepe laborum aut. Ipsa cupiditate ex harum at recusandae nesciunt. Ut dolores velit.
+                    </p>
+                    <div class="read-more">
+                    <a class="text-decoration-none" href="blog-single.html">Read More</a>
+                    </div>
+                </div>
+
+                </article><!-- End blog entry -->
+
+                <article class="entry">
+
+                <div class="entry-img">
+                    <img src="../Images/blog/blog-4.jpg" alt="" class="img-fluid">
+                </div>
+
+                <h2 class="entry-title">
+                    <a class="text-decoration-none" href="blog-single.html">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.</a>
+                </h2>
+
+                <div class="entry-meta">
+                    <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a class="text-decoration-none" href="blog-single.html">John Doe</a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a class="text-decoration-none" href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a class="text-decoration-none" href="blog-single.html">12 Comments</a></li>
+                    </ul>
+                </div>
+
+                <div class="entry-content">
+                    <p>
+                    Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
+                    Quia sed sunt. Ea asperiores expedita et et delectus voluptates rerum. Id saepe ut itaque quod qui voluptas nobis porro rerum. Quam quia nesciunt qui aut est non omnis. Inventore occaecati et quaerat magni itaque nam voluptas. Voluptatem ducimus sint id earum ut nesciunt sed corrupti nemo.
+                    </p>
+                    <div class="read-more">
+                    <a class="text-decoration-none" href="blog-single.html">Read More</a>
+                    </div>
+                </div>
+
+                </article>
+
+               
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="sidebar">
+
+                <h3 class="sidebar-title">Search</h3>
+                <div class="sidebar-item search-form">
+                    <form action="">
+                    <input type="text">
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+
+                <h3 class="sidebar-title">Categories</h3>
+                <div class="sidebar-item categories">
+                    <ul>
+                    <li><a class="text-decoration-none" href="#">Programming & Development <span>(25)</span></a></li>
+                    <li><a class="text-decoration-none" href="#">Design & Creativity <span>(12)</span></a></li>
+                    <li><a class="text-decoration-none" href="#">Business & Management <span>(5)</span></a></li>
+                    <li><a class="text-decoration-none" href="#">Marketing & Growth <span>(22)</span></a></li>
+                    <li><a class="text-decoration-none" href="#">Personal Development <span>(8)</span></a></li>
+                    <li><a class="text-decoration-none" href="#">Data & Analytics <span>(14)</span></a></li>
+                    </ul>
+                </div>
+
+                <h3 class="sidebar-title">Recent Posts</h3>
+                <div class="sidebar-item recent-posts">
+                    <div class="post-item clearfix">
+                    <img src="../Images/blog/blog-recent-1.jpg" alt="">
+                    <h4><a class="text-decoration-none" href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                    </div>
+
+                    <div class="post-item clearfix">
+                    <img src="../Images/blog/blog-recent-2.jpg" alt="">
+                    <h4><a class="text-decoration-none" href="blog-single.html">Quidem autem et impedit</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                    </div>
+
+                    <div class="post-item clearfix">
+                    <img src="../Images/blog/blog-recent-3.jpg" alt="">
+                    <h4><a class="text-decoration-none" href="blog-single.html">Id quia et et ut maxime similique occaecati ut</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                    </div>
+
+                    <div class="post-item clearfix">
+                    <img src="../Images/blog/blog-recent-4.jpg" alt="">
+                    <h4><a class="text-decoration-none" href="blog-single.html">Laborum corporis quo dara net para</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                    </div>
+
+                    <div class="post-item clearfix">
+                    <img src="../Images/Blog/blog-recent-5.jpg" alt="">
+                    <h4><a class="text-decoration-none" href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
+                    <time datetime="2020-01-01">Jan 1, 2020</time>
+                    </div>
+
+                </div>
+
+                <h3 class="sidebar-title">Tags</h3>
+                <div class="sidebar-item tags">
+                    <ul>
+                    <li><a class="text-decoration-none" href="#">App</a></li>
+                    <li><a class="text-decoration-none" href="#">IT</a></li>
+                    <li><a class="text-decoration-none" href="#">Business</a></li>
+                    <li><a class="text-decoration-none" href="#">Mac</a></li>
+                    <li><a class="text-decoration-none" href="#">Design</a></li>
+                    <li><a class="text-decoration-none" href="#">Office</a></li>
+                    <li><a class="text-decoration-none" href="#">Creative</a></li>
+                    <li><a class="text-decoration-none" href="#">Studio</a></li>
+                    <li><a class="text-decoration-none" href="#">Smart</a></li>
+                    <li><a class="text-decoration-none" href="#">Tips</a></li>
+                    <li><a class="text-decoration-none" href="#">Marketing</a></li>
+                    </ul>
+                </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+    </main>
+  </body>
+  <!-- Footer -->
+    <footer>
+       <section class="container-fluid footer-section pt-5 pb-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 get-in-touch gy-4">
+                <h5 class="text-orange mb-3">Get in Touch</h5>
+                <p class="text-white">
+                    <i class="bi bi-geo-alt-fill me-2"></i> 123 Street, Herat,
+                    Afghanistan
+                    <br />
+                    <i class="bi bi-telephone-fill me-2"></i> +93731595549
+                    <br />
+                    <i class="bi bi-envelope me-2"></i> asu@gmail.com
+                </p>
+                <ul class="p-0">
+                    <li>
+                    <a
+                        class="text-white text-decoration-none border rounded-circle m-1"
+                        href="#"
+                        ><i class="bi bi-linkedin"></i
+                    ></a>
+                    </li>
+                    <li>
+                    <a
+                        class="text-white text-decoration-none border rounded-circle m-1"
+                        href="#"
+                        ><i class="bi bi-twitter-x"></i
+                    ></a>
+                    </li>
+                    <li>
+                    <a
+                        class="text-white text-decoration-none border rounded-circle m-1"
+                        href="#"
+                        ><i class="bi bi-meta"></i
+                    ></a>
+                    </li>
+                    <li>
+                    <a
+                        class="text-white text-decoration-none border rounded-circle m-1"
+                        href="#"
+                        ><i class="bi bi-threads"></i
+                    ></a>
+                    </li>
+                    <li>
+                    <a
+                        class="text-white text-decoration-none border rounded-circle m-1"
+                        href="#"
+                        ><i class="bi bi-instagram"></i
+                    ></a>
+                    </li>
+                </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2 quick-links gy-4">
+                <h5 class="text-orange mb-2">Quick Links</h5>
+                <ul class="p-0">
+                    <li>
+                    <i class="bi bi-caret-right me-2 text-white"></i
+                    ><a class="text-decoration-none text-white" href="#">Home</a>
+                    </li>
+                    <li>
+                    <i class="bi bi-caret-right me-2 text-white"></i>
+                    <a
+                        class="text-decoration-none text-white"
+                        href="./Root/about.html"
+                        >About Us</a
+                    >
+                    </li>
+                    <li>
+                    <i class="bi bi-caret-right me-2 text-white"></i>
+                    <a
+                        class="text-decoration-none text-white"
+                        href="./Root/portfolio.html"
+                        >Our Portfolio</a
+                    >
+                    </li>
+                    <li>
+                    <i class="bi bi-caret-right me-2 text-white"></i>
+                    <a
+                        class="text-decoration-none text-white"
+                        href="./Root/services.html"
+                        >Our Services</a
+                    >
+                    </li>
+                    <li>
+                    <i class="bi bi-caret-right me-2 text-white"></i>
+                    <a
+                        class="text-decoration-none text-white"
+                        href="./Root/pricing.html"
+                        >Pricing Plan</a
+                    >
+                    </li>
+                    <li>
+                    <i class="bi bi-caret-right me-2 text-white"></i>
+                    <a class="text-decoration-none text-white" href="./Root/blog.html"
+                        >Our Blog Page</a
+                    >
+                    </li>
+                    <li>
+                    <i class="bi bi-caret-right me-2 text-white"></i>
+                    <a
+                        class="text-decoration-none text-white"
+                        href="./Root/contact.html"
+                        >Contact Us</a
+                    >
+                    </li>
+                </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 gallery gy-4">
+                <h5 class="text-orange mb-2">Gallery</h5>
+                <div class="row gy-2">
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div style="width: 99%" class="d-block mx-auto">
+                        <img
+                        src="../Images/Portfolio/1.jpg"
+                        alt="an image"
+                        class="img-fluid"
+                        style="height: 75px; width: 100%"
+                        />
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div style="width: 99%" class="d-block mx-auto">
+                        <img
+                        src="../Images/Portfolio/3.jpg"
+                        alt="an image"
+                        class="img-fluid"
+                        style="height: 75px; width: 100%"
+                        />
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div style="width: 99%" class="d-block mx-auto">
+                        <img
+                        src="../Images/Portfolio/5.jpg"
+                        alt="an image"
+                        class="img-fluid"
+                        style="height: 75px; width: 100%"
+                        />
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div style="width: 99%" class="d-block mx-auto">
+                        <img
+                        src="../Images/Portfolio/7.jpg"
+                        alt="an image"
+                        class="img-fluid"
+                        style="height: 75px; width: 100%"
+                        />
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div style="width: 99%" class="d-block mx-auto">
+                        <img
+                        src="../Images/Portfolio/9.jpg"
+                        alt="an image"
+                        class="img-fluid"
+                        style="height: 75px; width: 100%"
+                        />
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div style="width: 99%" class="d-block mx-auto">
+                        <img
+                        src="../Images/Portfolio/2.jpg"
+                        alt="an image"
+                        class="img-fluid"
+                        style="height: 75px; width: 100%"
+                        />
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 newsletter gy-4">
+                <h5 class="text-orange mb-2">Newsletter</h5>
+                <p class="text-white">
+                    Stay ahead in learning! Subscribe to our newsletter for updates,
+                    tips, and exclusive course offers delivered to you.
+                </p>
+                <div class="input-group mb-3">
+                    <input
+                    type="eamil"
+                    class="form-control"
+                    placeholder="Your Email Address"
+                    />
+                    <button class="btn bg-orange text-white" type="submit">
+                    Sign Up
+                    </button>
+                </div>
+                </div>
+            </div>
+       </section>
+       <!-- Footer Bottom Section -->
+       <section class="container-fluid footer-bottom pt-3 text-center">
+            <p class="text-white p-3 m-0">
+                    <i class="bi bi-c-circle"></i>
+                    <a class="text-orange text-decoration-none" href="#">ASU</a>. All
+                    Rights Reserved Designed By
+                    <a class="text-orange text-decoration-none" href="#">ASU</a>
+                    <br />
+                    Distributed By:
+                    <a class="text-orange text-decoration-none" href="#"
+                    >Arizona State University</a
+                    >
+                </p>
+            </div>
+       </section>
+    </footer>
+    <!-- Back To Top :) -->
+    <a class="the-arrow" href="#"><i class="bi bi-arrow-up"></i></a>
+    <!-- JS Bootstrap CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</html>
